@@ -14,7 +14,7 @@ int max(int *array, int size)
 	for (a = array[0], b = 1; b < size; b++)
 	{
 		if (array[b] > a)
-			b = array[a];
+			a = array[b];
 	}
 	return (a);
 }
