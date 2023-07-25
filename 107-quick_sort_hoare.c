@@ -36,6 +36,9 @@ int partition(int *array, size_t size, int l, int r)
 	{
 		do {
 			a++;
+		} while (array[a] < p);
+		do {
+			b--;
 		} while (array[b] > p);
 
 		if (a < b)
